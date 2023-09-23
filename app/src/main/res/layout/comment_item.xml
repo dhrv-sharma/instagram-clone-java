@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- designing for the comment recycler view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+<!-- for user circular image-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/image_profile"
+        android:src="@drawable/ic_action_person"/>
+
+<!--    creating a linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/image_profile">
+<!-- place where username will be visible -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/username"
+            android:text="Username"/>
+<!--        place where the message will be visible -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:text="This is a comment"
+            android:id="@+id/comment"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

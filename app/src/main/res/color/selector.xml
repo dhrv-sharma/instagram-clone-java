@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this file will define colour of our icon when selected or not-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    when any item is selected that icon will coloured color black-->
+    <item android:color="@color/colorBlack" android:state_selected="true" />
+
+    <item android:color="@android:color/darker_gray"/>
+
+</selector>

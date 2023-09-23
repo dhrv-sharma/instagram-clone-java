@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this code is being used for the designing of the -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title=""
+        android:icon="@drawable/ic_action_home"
+        android:id="@+id/home"/>
+    <item android:title=""
+        android:icon="@drawable/ic_action_search"
+        android:id="@+id/search"/>
+    <item android:title=""
+    android:icon="@drawable/ic_action_add"
+    android:id="@+id/add"/>
+    <item android:title=""
+        android:icon="@drawable/ic_action_fav"
+        android:id="@+id/heart"/>
+    <item android:title=""
+        android:icon="@drawable/ic_action_person"
+        android:id="@+id/person"/>
+</menu>

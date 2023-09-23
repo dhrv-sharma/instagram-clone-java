@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".instapage">
+
+
+<!--    fragment is drawn over the layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        tools:ignore="InvalidId" />
+
+
+<!--to include app bar we hae to add dependency in gradle build -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemIconTint="@color/selector"
+            app:labelVisibilityMode="unlabeled"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_menu"/>
+<!--        adding the file of menu like we used to used to do in case of navigation bar udemy-->
+<!--        itemContTint tells when the item selected how item reacts-->
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>
